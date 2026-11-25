@@ -1,0 +1,16 @@
+// Author: Anurag (Anurag)
+// Project: Nand2Tetris - Project 2 (Arithmetic Chips)
+// Remarks: Original implementation by Anurag. All rights reserved.
+
+/**
+ * Half adder:
+ * Computes the sum of two 1-bit inputs.
+ */
+CHIP HalfAdder {
+    IN a, b;
+    OUT sum, carry;
+
+    PARTS:
+    Xor(a=a, b=b, out=sum);
+    And(a=a, b=b, out=carry);
+}
