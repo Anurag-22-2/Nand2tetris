@@ -9,8 +9,8 @@
 //   Height (rows)  = 20
 //
 // Configured below with K = 18 from roll number 2501010018:
-//   Start address = 16384 + (18 * 32) = 18656
-//   Width         = 16 * ((18 mod 4) + 1) = 64 px (4 words per row)
+//   Start address = 16384 + (18 * 32) = 16960
+//   Width         = 16 * ((18 mod 4) + 1) = 48 px (3 words per row)
 //   Height        = 20 rows
 
 (MAIN_LOOP)
@@ -31,7 +31,7 @@
     M=-1
 
 (START_DRAW)
-    @18656
+    @16960
     D=A
     @rowAddr
     M=D
